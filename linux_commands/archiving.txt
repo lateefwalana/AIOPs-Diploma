@@ -1,0 +1,16 @@
+## tar
+tar [options] [archive-file] [file or directory to be archived]
+tar -cf filename.tar /path
+tar -czf filename.tar.gz /path
+tar -czvf filename.tar.gz /path
+tar -xvf filename.tar.gz
+
+## zip
+zip -r filename.zip /path
+unzip filename.zip
+
+c = create
+f = create file with speciic name
+z = compress
+v = verbose
+x = extract
