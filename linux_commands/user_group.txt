@@ -1,0 +1,14 @@
+## managing user groups
+# types of groups
+- user groups
+- admin groups
+# creating a group
+groupadd name_of_the_group
+
+
+# add a user to group
+usermod -G group_name user_name
+
+# removing user from a group
+gpasswd -d user_name group_name
+ 

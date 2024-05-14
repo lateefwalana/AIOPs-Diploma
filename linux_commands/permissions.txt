@@ -1,0 +1,2 @@
+# Permissions in Linux
+chown user_name file_name

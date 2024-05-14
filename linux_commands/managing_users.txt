@@ -1,3 +1,28 @@
 ## Linux user types
 
+standard users
+admin users or root
+
 ##Create new user
+useradd username / only admin/root can create new users
+
+userdel username / delete user, this will not user home directory if created
+userdel -r username / to delete user home directory
+
+useradd -m alnafi
+useradd -m -s "/bin/bash" alnafi
+useradd -c "al nafi" -m -s "/bin/bash" alnafi 
+
+passwd username to create or change username 
+passwd alnafi
+
+usermod -L alnafi / to lock account
+
+usermod -U alnafi / to unlock account
+
+
+
+-m = flag to create user home directory
+-s = login shell of new account
+-c = to define user name or caption
+
