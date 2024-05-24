@@ -1,2 +1,34 @@
 # Permissions in Linux
 chown user_name file_name
+
+chown -R user_name directory
+
+chgrp user_name file_name
+chgrp -R user_name directory
+
+chown user_name:group_name file_name
+chown -R user_name:group_name directory
+
+# modify file Permissions
+
+chmod u+x /allow user to execute the file
+chmod g+x /allow group to execute the file
+chmod o+x /allow everyone to execute the file
+
+# remove Permissions
+
+chmod u-x / remove execute Permissions from user
+chmod g-x / remove execute Permissions from group
+chmod o-x / remove execute Permissions from everyone
+
+#Octal Permissions
+
+    r (read): 4
+    w (write): 2
+    x (execute): 1
+
+chmod 777 file_name / This will give everyone rwx Permissions
+chmod 754 file_name / this will allow owner full Permissions group read and execute and everyone else just read.
+
+
+-R = used for recursive 

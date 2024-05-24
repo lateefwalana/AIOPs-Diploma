@@ -1,0 +1,5 @@
+http://google.com
+https://google.com
+https://www.google.com
+ftp://cyberglobe.co.uk
+https://cisco.com
