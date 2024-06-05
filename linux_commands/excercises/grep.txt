@@ -1,5 +1,12 @@
+
+urls.txt
+
 http://google.com
 https://google.com
 https://www.google.com
 ftp://cyberglobe.co.uk
 https://cisco.com
+
+only show ruls that start with http|https
+
+cat grep.txt | grep -E "^(http|https):[\/]{2}([a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,4})"
