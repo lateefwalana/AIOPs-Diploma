@@ -11,9 +11,15 @@ gunzip to decompress the file
 bzip2 to compress file
 bunzip to decompress the file.
 
+use 'zcat' to read gzip files 
 zip - archive and compress
+file - to check file information 
 
+tar -cvf filename.tar * - no compression 
+tar -zcvf filename.tar.gz * - with compression 
+tar -jcvf filename.tar.bz * - with high compression
 
+tar -tvf filename - list file in tarball
 
 mkdir /opt/temp
 cd /opt/temp
