@@ -79,5 +79,11 @@ resolv.conf
 /etc/resolv.conf
 ```
 
-
+## Ip Aliasing
+An interface can have mulitpal ip addresses, this is called ip alias
+```
+ifconfig eth1:1 192.168.1.10 netmask 255.255.255.0 gw 192.168.1.1
+ifconfig eth1:2 192.168.1.10 netmask 255.255.255.0 gw 192.168.1.2
+ifconfig eth1:3 192.168.1.10 netmask 255.255.255.0 gw 192.168.1.3
+```
 
