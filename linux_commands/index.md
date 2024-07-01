@@ -1,1 +1,2 @@
-# [Lets learn about FTP] (./ftp.md)
+# Lets learn about FTP
+[FTP] (./ftp.md)
