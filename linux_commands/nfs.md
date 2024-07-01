@@ -65,4 +65,14 @@ firewall-cmd --permanent --add-service=mountd
 firewall-cmd --permanent --add-service=rpc-bind
 firewall-cmd --reload
 ```
+## Change permission for RO to RW
 
+By default the share will read only. We need to amend `/etc/exports` to change the permissions of the share by amending the line to `/opt/fileserver *(sync,rw)`
+
+```
+vi /etc/exports
+/opt/fileserver *(sync,rw)
+exportfs -r # reload
+```
+> [!TIP]
+> The above will only make filesystem writeable. You will need to change directory/file permissions as well to be able to write. Example `chmod +w /share`
