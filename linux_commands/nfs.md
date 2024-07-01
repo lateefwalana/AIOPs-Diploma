@@ -41,7 +41,7 @@ exportfs -rv
 
 # Access NFS share from client device
 > [!IMPORTANT]
-> Make sure `nfs-util` packege is also installed on client device <
+> Make sure `nfs-util` packege is also installed on client device 
 
 To check what is shared, run the following command 
 ```
