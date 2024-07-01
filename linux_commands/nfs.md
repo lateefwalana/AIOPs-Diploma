@@ -40,6 +40,8 @@ exportfs -rv
 ```
 
 # Access NFS share from client device
+> [!IMPORTANT]
+> Make sure `nfs-util` packege is also installed on client device
 To check what is shared, run the following command 
 ```
 showmount -e server1.example.com
@@ -56,10 +58,11 @@ mount server1.example.com:/opt/fileserver /myshare/
 vi /etc/fstab
 server1.example.com:/opt/fileserver /myshare nfs defaults 0 0
 ```
-# Open firewall to NFS operations
+# Open firewall for NFS operations
 ```
 firewall-cmd --permanent --add-service=nfs
 firewall-cmd --permanent --add-service=mountd
 firewall-cmd --permanent --add-service=rpc-bind
 firewall-cmd --reload
 ```
+
