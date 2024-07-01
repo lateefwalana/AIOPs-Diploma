@@ -8,17 +8,17 @@ yum install nfs-utils -y
 This will enable services 
 ```
 systemctl enable rpcbind
-systemctl enable nfs
+systemctl enable nfs-server
 ```
 # Start services
 ```
 systemctl start rpcbind
-systemctl start nfs
+systemctl start nfs-server
 ```
 # Check status of both services 
 ```
 systemctl status rpcbind
-systemctl status nfs
+systemctl status nfs-server
 ```
 
 ## Share a folder
@@ -43,8 +43,10 @@ exportfs -rv
 To check what is shared, run the following command 
 ```
 showmount -e server1.example.com
+
 ```
-##mout
+## Mouting
+
 ```
 mkdir /myshare
 mount server1.example.com:/opt/fileserver /myshare/
