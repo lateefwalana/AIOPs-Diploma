@@ -46,7 +46,6 @@ exportfs -rv
 To check what is shared, run the following command 
 ```
 showmount -e server1.example.com
-
 ```
 ## Mouting
 
