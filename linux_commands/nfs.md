@@ -56,3 +56,10 @@ mount server1.example.com:/opt/fileserver /myshare/
 vi /etc/fstab
 server1.example.com:/opt/fileserver /myshare nfs defaults 0 0
 ```
+# Open firewall to NFS operations
+```
+firewall-cmd --permanent --add-service=nfs
+firewall-cmd --permanent --add-service=mountd
+firewall-cmd --permanent --add-service=rpc-bind
+firewall-cmd --reload
+```
