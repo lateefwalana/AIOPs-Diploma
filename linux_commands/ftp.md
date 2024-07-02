@@ -21,23 +21,20 @@ yum install vsftpd
 
 ## Start and verify the service
 ```
-[root@server1 opt]# systemctl start vsftpd
-[root@server1 opt]# systemctl status vsftpd
-● vsftpd.service - Vsftpd ftp daemon
-     Loaded: loaded (/usr/lib/systemd/system/vsftpd.service; disabled; preset: disabled)
-     Active: active (running) since Tue 2024-07-02 01:20:55 BST; 8s ago
-    Process: 1579 ExecStart=/usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf (code=exited, status=0/SUCCESS)
-   Main PID: 1580 (vsftpd)
-      Tasks: 1 (limit: 23170)
-     Memory: 720.0K
-        CPU: 6ms
-     CGroup: /system.slice/vsftpd.service
-             └─1580 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf
-
-Jul 02 01:20:55 server1 systemd[1]: Starting Vsftpd ftp daemon...
-Jul 02 01:20:55 server1 systemd[1]: Started Vsftpd ftp daemon.
-OR
-[root@server1 opt]# systemctl is-active vsftpd
-active
+systemctl start vsftpd
+systemctl status vsftpd
 ```
-
+## Enable the service 
+If we want the service to auto restart after reboot, we have to enable the services 
+```
+systemctl enable vsftpd
+```
+## Other verifications commands
+The follwoing commands are useful to verify the service status 
+```
+systemctl is-active vsftpd
+systemctl is-enabled vsftpd
+ss -tulnp | grep -i 21
+```
+## FTP path
+FTP default path is `/var/ftp/`
