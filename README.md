@@ -4,13 +4,13 @@ The repo is for notes, diploma in AIOps from al-nafi
 ## Lets learn Linux
 ## rhel services
 ## NFS
-[NFS](./linux_commands/nfs.md) How to install and setup NFS server.
+[NFS](./rhel_services/nfs.md) How to install and setup NFS server.
 
 ## FTP
-[FTP](./linux_commands/ftp.md) Instructions to install and setup FTP server.
+[FTP](./rhel_services/ftp.md) Instructions to install and setup FTP server.
 
 ## vsftpd
-[vsftpd](./linux_commands/vsftp.md) vsftpd advance configurations
+[vsftpd](./rhel_services/vsftp.md) vsftpd advance configurations
 
 ## Apache
-[apache](./linux_commands/apache_server.md) Apache Server configuration
+[apache](./rhel_services/apache_server.md) Apache Server configuration
