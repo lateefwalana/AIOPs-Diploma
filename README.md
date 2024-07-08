@@ -20,3 +20,9 @@ The repo is for notes, diploma in AIOps from al-nafi
 
 ## IPTABLES
 [IPTABLES](./rhel_services/iptables_md) IpTables - Kernel level firewall
+
+## firewalld 
+[firewalld](./rhel_services/firewalld.md) firewalld - kernel level firewall
+
+## selinux
+[selinux](./rhel_services/selinux.md)
