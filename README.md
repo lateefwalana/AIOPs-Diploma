@@ -25,4 +25,4 @@ The repo is for notes, diploma in AIOps from al-nafi
 [firewalld](./rhel_services/firewalld.md) firewalld - kernel level firewall
 
 ## selinux
-[selinux](./rhel_services/selinux.md)
+[selinux](./rhel_services/selinux.md) Security Enhanced Linux
