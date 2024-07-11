@@ -63,3 +63,32 @@ SELinux adds an additional layer of security policies that govern the access pro
 - **Multi-Level Security**: Enforcing different security levels and categories, allowing administrators to control which users and applications can access sensitive data.
 
 SELinux represents a robust security architecture and is part of a defense-in-depth strategy that can greatly enhance the security posture of a Linux environment. It can be complex to manage and requires a deep understanding of your system's operations and the security policies it requires. Properly configuring SELinux and understanding its policies can substantially mitigate the impact of vulnerabilities and limit the damage potential of breaches.
+
+```bash
+[root@server1 opt]# dnf whatprovides */sepolicy
+Last metadata expiration check: 0:05:32 ago on Mon 08 Jul 2024 22:55:51 BST.
+policycoreutils-devel-3.6-2.1.el9.i686 : SELinux policy core policy devel utilities
+Repo        : appstream
+Matched from:
+Filename    : /usr/bin/sepolicy
+Filename    : /usr/share/bash-completion/completions/sepolicy
+
+policycoreutils-devel-3.6-2.1.el9.x86_64 : SELinux policy core policy devel utilities
+Repo        : appstream
+Matched from:
+Filename    : /usr/bin/sepolicy
+Filename    : /usr/share/bash-completion/completions/sepolicy
+
+python3-policycoreutils-3.6-2.1.el9.noarch : SELinux policy core python3 interfaces
+Repo        : @System
+Matched from:
+Filename    : /usr/lib/python3.9/site-packages/sepolicy
+
+python3-policycoreutils-3.6-2.1.el9.noarch : SELinux policy core python3 interfaces
+Repo        : appstream
+Matched from:
+Filename    : /usr/lib/python3.9/site-packages/sepolicy
+```
+```bash
+dnf -y install policycoreutils-devel
+```

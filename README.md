@@ -26,3 +26,6 @@ The repo is for notes, diploma in AIOps from al-nafi
 
 ## selinux
 [selinux](./rhel_services/selinux.md) Security Enhanced Linux
+
+# DNS - Domain Name System
+[dns](./rhel_services/dns.md) Domain Name System
