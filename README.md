@@ -27,8 +27,8 @@ This repo is for notes, diploma in AIOps from al-nafi
 ## selinux
 [selinux](./CISSP/DCCS/rhel_services/selinux.md) Security Enhanced Linux
 
-# DNS - Domain Name System
+## DNS - Domain Name System
 [dns](./CISSP/DCCS/rhel_services/dns.md) Domain Name System
 
-# SMB - System message block protocol
+## SMB - System message block protocol
 [samba](./CISSP/DCCS/rhel_services/smb.md) SMB or smaba
