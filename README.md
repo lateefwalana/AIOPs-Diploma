@@ -1,5 +1,5 @@
 # AIOPs-Diploma
-The repo is for notes, diploma in AIOps from al-nafi
+This repo is for notes, diploma in AIOps from al-nafi
 
 ## Lets learn Linux
 ## rhel services
