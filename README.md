@@ -29,3 +29,6 @@ The repo is for notes, diploma in AIOps from al-nafi
 
 # DNS - Domain Name System
 [dns](./rhel_services/dns.md) Domain Name System
+
+# SMB - System message block protocol
+[samba](./rhel_services/smb.md) SMB or smaba
